@@ -1,5 +1,5 @@
 L = [2, 4, 5, 7, 8, 9, 12, 14, 17, 19, 22, 25, 27, 28, 33, 37]
-target_value = 28
+target_value = 8
 
 low = 0
 high = len(L) - 1
@@ -13,3 +13,8 @@ while low <= high:
         low = mid + 1
     else:
         high = mid - 1
+print(low,high,mid)
+if low > high:
+    mid = -1
+    print(mid, "\n","Item not in list")
+    
